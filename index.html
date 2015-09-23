@@ -1,0 +1,35 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <title>Distance Sorter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="all" href="css/styles.css"/>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="main-title">Distance to Venice Calculator</h1>
+        <p class="sub-title">510 Victoria, Venice, CA</p>
+        <div class="destinations js-destinations"></div>
+
+        <p class="section-title">No Results:</p>
+        <div class="js-noresults"></div>
+
+        <input type="text" placeholder="add another address" class="add-address js-add" value="" />
+        <button class="submit">Add</button>
+    </div> <!-- /container -->
+
+    <!--
+        I would usually use an AMD such as require.js to load scripts and their dependencies,
+        but for the sake of simplicity, I just load the scripts here in order.
+    -->
+    <script type="text/javascript" src="js/vendor/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/app/maps.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <!-- google maps api -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaQrjv3JRhMcb5D7_V1h4jVVqq06Knsq0&signed_in=true&callback=init"
+        async defer></script>
+
+</body>
+</html>
